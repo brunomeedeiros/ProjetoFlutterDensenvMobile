@@ -1,12 +1,13 @@
-import 'package:aula_classes/pratica/pessoa.dart';
+import 'pessoa.dart';
 
-class Fornecedor extends Pessoa{
+class Funcionario extends Pessoa{
   String telefone;
   String contato;
-  Fornecedor(
+  Funcionario(
     {required super.nome, 
     required super.documento,
     required super.cidade,
     required this.telefone,
     required this.contato});
+
 }

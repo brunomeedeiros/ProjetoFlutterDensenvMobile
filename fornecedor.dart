@@ -1,4 +1,4 @@
-import 'package:aula_classes/pratica/pessoa.dart';
+import 'pessoa.dart';
 
 class Fornecedor extends Pessoa{
   String telefone;

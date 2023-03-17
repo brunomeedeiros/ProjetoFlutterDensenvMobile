@@ -22,7 +22,25 @@ void main(List<String> arguments){
   → criar e entender a sintaxe de uma função anônima
   → entenda quando utilizar ";" e ","
 
+  */
+  Cidade(
+    nome: 'maringa',
+    calcularDensidadeDemografica: (){
+      var area = 1202.3;
+      var populacao = 88374;
+
+      return area/populacao;
+    },
+    estado: Estado(
+      nome: 'Parana',
+      sigla: 'PR',
+      
+      calcularPIB: () => (1.7 + 1.2) / 11.08
   
+    )
+  );
+
+  /*
   exercício 02 
   - Altere uma das FNs para utilizar Arrow Function
   
@@ -37,3 +55,11 @@ void main(List<String> arguments){
   
 }
 
+// calcularPIB: (){
+      //   var produto = 1.7; 
+      //   var servico = 1.2;
+      //   var habitantes = 11.08;
+
+      //   return (produto + servico) / habitantes;
+      // }
+      // }

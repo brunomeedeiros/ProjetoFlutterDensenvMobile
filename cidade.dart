@@ -1,4 +1,4 @@
-import 'package:aula_classes/pratica/estado.dart';
+import 'estado.dart';
 
 class Cidade{
   String nome; 

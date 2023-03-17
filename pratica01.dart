@@ -1,6 +1,7 @@
-
-
+import 'cidade.dart';
+import 'estado.dart';
 import 'fornecedor.dart';
+import 'funcionario.dart';
 
 void main(List<String> args) {
   /*
@@ -25,13 +26,40 @@ void main(List<String> args) {
   → quais parâmetros são obrigatórios?
   → quais tipos de parâmetros?
   */
-
-  Fornecedor(
-    cidade: '',
-    contato: '',
-    documento: '',
-    nome: '',
-    telefone: ''
-
+  var funcionaro = Funcionario(
+    contato: 'Bruno',
+    documento: '213.123.123.12',
+    nome: 'Bruno Medeiros',
+    telefone: '44991094772',
+    cidade: Cidade(
+      nome: 'Paranavai',
+      estado:Estado(
+        nome: 'Parana',
+        sigla: 'PR',
+        status: 'Ativo'
+        )
+    )
   );
+  
+
+  print('${Funcionario(
+    contato: 'Bruno',
+    documento: '213.123.123.12',
+    nome: 'Bruno Medeiros',
+    telefone: '44991094772',
+    cidade: Cidade(
+      nome: 'Paranavai',
+      estado:Estado(
+        nome: 'Parana',
+        sigla: 'PR',
+        status: 'Ativo'
+        )
+    )
+  )
+  }');
+
+  print(funcionaro.cidade.nome);
+
+
+
 }
